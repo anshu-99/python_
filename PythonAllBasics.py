@@ -1,15 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # Python Basics
 print("Udbhav Ojha")
-
-
-# In[4]:
-
 
 #data types
 number=66;
@@ -26,19 +16,11 @@ print(stringNum," is",type(stringNum))
 print(isTrue," is",type(isTrue))
 print(subjectList," is",type(subjectList))
 
-
-# In[1]:
-
-
 # input
 name=input("enter name")
 age=int(input("enter age"))
 
 print("Name:",name,"\nage:",age)
-
-
-# In[3]:
-
 
 maths = int(input("Enter Marks in maths: "))
 eng = int(input("Enter Marks in english: "))
@@ -56,26 +38,15 @@ print("-------------")
 print("Total:", total, "\nAverage:", avg)
 
 
-# In[12]:
-
-
 # range
 print(list(range(10)))
 print(list(range(1,10)))
 print(list(range(1,10,2)))
 
-
-# In[4]:
-
-
 # loop
 num=int(input("enter num for table:"))
 for x in range(1,11):
     print( num,"x",x,":",x*num)
-
-
-# In[7]:
-
 
 # Strings
 firstName="Udbhav"
@@ -87,18 +58,10 @@ Chandigarh University, pursuing MCA"""
 
 print(firstName, lastName, email, details)
 
-
-# In[21]:
-
-
 name="Udbhav Ojha"
 
 for i in range(len(name)):
     print(name[i],end="");
-
-
-# In[27]:
-
 
 # functions in string
 password=input("enter password:")
@@ -108,10 +71,6 @@ if(password.isalpha()):
 else:
     print("Invalid Password")
 
-
-# In[31]:
-
-
 # lstrip() and rstring()
 str= "   bcde   "
 
@@ -119,20 +78,12 @@ print(str.lstrip())
 print(str.rstrip())
 print(len(str))
 
-
-# In[33]:
-
-
 # list
 
 my_list=[1,4,2,5,6,9,10]
 my_secondList=["Udbhav Ojha","22MCA20419",5,4,7.65]
 
 print(my_list,"\n",my_secondList)
-
-
-# In[8]:
-
 
 my_list = [1, 4, 2, 5, 6, 9, 10]
 my_secondList = ["Udbhav Ojha", "22MCA20419", 5, 4, 7.65]
@@ -150,9 +101,6 @@ else:
 print(my_list)
 
 
-# In[23]:
-
-
 # sum of odd and even up to input numbers
 number= int(input("Enter range:"))
 evenSum=0;
@@ -164,9 +112,32 @@ for i in range(1,(number+1)):
         oddSum+=i;
 print("Sum of even: {} and Sum of odd: {}".format(evenSum, oddSum))
 
+listInput = []
+length = int(input("Enter the length of the list: "))
 
-# In[ ]:
+for i in range(length):
+    user_input = int(input(f"Enter element {i + 1}: "))
+    listInput.append(user_input)
+
+print("The list you entered is:", listInput)
 
 
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print()
+
+
+for i in range(1, 6):
+    print(" " * (5 - i), end="")
+    print("*" * (2 * i - 1))
+
+for i in range(1, 6):
+    print(" " * (5 - i), end="")
+    print("*" * (2 * i - 1))
+
+for i in range(4, 0, -1):
+    print(" " * (5 - i), end="")
+    print("*" * (2 * i - 1))
 
 
