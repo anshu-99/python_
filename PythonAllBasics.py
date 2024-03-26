@@ -141,3 +141,63 @@ for i in range(4, 0, -1):
     print("*" * (2 * i - 1))
 
 
+for i in range (1,6):
+    for j in range (1,i+1):
+        print(i,end=" ")
+    print();
+
+for i in range (1,26):
+    for j in range (1,11):
+        print(i*j,end=" ");
+    print();
+
+for i in range (1,11):
+    for j in range (1,i+1):
+        print(i*j,end=" ");
+    print();
+
+# string manipulation
+str= "Hello World"
+a="java"
+print(len(str))
+print(str.count('o'))
+print(str.upper())
+print(str.lower())
+print(str.index('o'))
+print(str.capitalize())
+print(str.find('l',0,len(str)))
+name = input("enter name ")
+print("Name entered:",format(name))
+print(a.center(10, "*"))
+
+# String functions
+
+#isalnum Returns True if all characters in the string are alphanumeric
+password = "ugv90"
+if(password.isalnum()):
+    print("Valid")
+else:
+    print("Invalid")
+
+#isalpha Returns True if all characters in the string are in the alphabet
+name = "udb"
+print(name, name.isalpha())
+
+#isdecimal Returns True if all characters in the string are decimals
+deciName = "1234"
+print(deciName,deciName.isdecimal())
+
+#isdigit - Returns True if att characters in the string are digits
+num = "123s"
+num1 = "123"
+
+print(num,num.isdigit())
+print(num1, num1.isdigit())
+
+# String Slicing
+string= "Harry Potter and the Half Blood Prince"
+print(string[0:9])
+
+numString = "0123456789"
+print(numString[::2])
+
